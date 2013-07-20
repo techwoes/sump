@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\don\projects\logic_analyzer\impact.xsl
+OUTFILE=C:\Users\don\projects\logic_analyzer\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\don\projects\logic_analyzer
+LICENSE=iMPACT
+USER_INFO=iMPACT
