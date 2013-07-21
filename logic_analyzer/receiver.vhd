@@ -202,7 +202,7 @@ begin
 				nbytecount <= 0;
 				nopcode <= opcode;
 				ndataBuf <= dataBuf;
-				if counter = 20 then
+				if counter = 10 then
 					nstate <= INIT;
 				else
 					nstate <= state;

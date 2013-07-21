@@ -151,8 +151,8 @@ begin
 		end if;
 	end process;
 	
-	probeInput <= input;
-	-- probeInput <= test_counter(40 downto 9); -- use this to connect a counter to the inputs
+	--probeInput <= input;
+	probeInput <= test_counter(40 downto 9); -- use this to connect a counter to the inputs
 	
 	Inst_clockman: clockman PORT MAP(
 		clkin => xtalClock,
