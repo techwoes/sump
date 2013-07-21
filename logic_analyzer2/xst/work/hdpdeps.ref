@@ -1,0 +1,138 @@
+V3 84
+FL C:/Users/don/repos/sump/logic_analyzer/BRAM8k32bit.vhd 2013/07/20.17:11:51 P.68d
+EN work/BRAM8k32bit 1374376012 \
+      FL C:/Users/don/repos/sump/logic_analyzer/BRAM8k32bit.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/BRAM8k32bit/Behavioral 1374376013 \
+      FL C:/Users/don/repos/sump/logic_analyzer/BRAM8k32bit.vhd \
+      EN work/BRAM8k32bit 1374376012 CP RAMB16_S2
+FL C:/Users/don/repos/sump/logic_analyzer/clockman.vhd 2013/07/20.17:11:51 P.68d
+EN work/clockman 1374376034 \
+      FL C:/Users/don/repos/sump/logic_analyzer/clockman.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/clockman/Behavioral 1374376035 \
+      FL C:/Users/don/repos/sump/logic_analyzer/clockman.vhd EN work/clockman 1374376034 \
+      CP DCM CP BUFG
+FL C:/Users/don/repos/sump/logic_analyzer/controller.vhd 2013/07/20.17:11:51 P.68d
+EN work/controller 1374376024 \
+      FL C:/Users/don/repos/sump/logic_analyzer/controller.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/controller/Behavioral 1374376025 \
+      FL C:/Users/don/repos/sump/logic_analyzer/controller.vhd EN work/controller 1374376024
+FL C:/Users/don/repos/sump/logic_analyzer/core.vhd 2013/07/20.17:11:51 P.68d
+EN work/core 1374376040 FL C:/Users/don/repos/sump/logic_analyzer/core.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/core/Behavioral 1374376041 \
+      FL C:/Users/don/repos/sump/logic_analyzer/core.vhd EN work/core 1374376040 \
+      CP BUFGMUX CP decoder CP flags CP sync CP sampler CP trigger CP controller \
+      CP rle_enc
+FL C:/Users/don/repos/sump/logic_analyzer/debounce.vhd 2013/07/20.17:11:51 P.68d
+EN work/debounce 1374376036 \
+      FL C:/Users/don/repos/sump/logic_analyzer/debounce.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/debounce/logic 1374376037 \
+      FL C:/Users/don/repos/sump/logic_analyzer/debounce.vhd EN work/debounce 1374376036
+FL C:/Users/don/repos/sump/logic_analyzer/decoder.vhd 2013/07/20.17:11:51 P.68d
+EN work/decoder 1374376014 FL C:/Users/don/repos/sump/logic_analyzer/decoder.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/decoder/Behavioral 1374376015 \
+      FL C:/Users/don/repos/sump/logic_analyzer/decoder.vhd EN work/decoder 1374376014
+FL C:/Users/don/repos/sump/logic_analyzer/demux.vhd 2013/07/20.17:11:51 P.68d
+EN work/demux 1374376008 FL C:/Users/don/repos/sump/logic_analyzer/demux.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/demux/Behavioral 1374376009 \
+      FL C:/Users/don/repos/sump/logic_analyzer/demux.vhd EN work/demux 1374376008
+FL C:/Users/don/repos/sump/logic_analyzer/eia232.vhd 2013/07/20.17:11:51 P.68d
+EN work/eia232 1374376038 FL C:/Users/don/repos/sump/logic_analyzer/eia232.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/eia232/Behavioral 1374376039 \
+      FL C:/Users/don/repos/sump/logic_analyzer/eia232.vhd EN work/eia232 1374376038 \
+      CP prescaler CP receiver CP transmitter
+FL C:/Users/don/repos/sump/logic_analyzer/filter.vhd 2013/07/20.17:11:51 P.68d
+EN work/filter 1374376010 FL C:/Users/don/repos/sump/logic_analyzer/filter.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/filter/Behavioral 1374376011 \
+      FL C:/Users/don/repos/sump/logic_analyzer/filter.vhd EN work/filter 1374376010
+FL C:/Users/don/repos/sump/logic_analyzer/flags.vhd 2013/07/20.17:11:51 P.68d
+EN work/flags 1374376016 FL C:/Users/don/repos/sump/logic_analyzer/flags.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/flags/Behavioral 1374376017 \
+      FL C:/Users/don/repos/sump/logic_analyzer/flags.vhd EN work/flags 1374376016
+FL C:/Users/don/repos/sump/logic_analyzer/la-S3ESK.vhd 2013/07/20.17:51:01 P.68d
+EN work/la 1374376044 FL C:/Users/don/repos/sump/logic_analyzer/la-S3ESK.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 LB UNISIM PH unisim/VCOMPONENTS 1370735613
+AR work/la/Behavioral 1374376045 \
+      FL C:/Users/don/repos/sump/logic_analyzer/la-S3ESK.vhd EN work/la 1374376044 \
+      CP clockman CP debounce CP eia232 CP core CP sram_bram
+FL C:/Users/don/repos/sump/logic_analyzer/prescaler.vhd 2013/07/20.17:11:51 P.68d
+EN work/prescaler 1374376028 \
+      FL C:/Users/don/repos/sump/logic_analyzer/prescaler.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/prescaler/Behavioral 1374376029 \
+      FL C:/Users/don/repos/sump/logic_analyzer/prescaler.vhd EN work/prescaler 1374376028
+FL C:/Users/don/repos/sump/logic_analyzer/receiver.vhd 2013/07/20.18:15:06 P.68d
+EN work/receiver 1374376030 \
+      FL C:/Users/don/repos/sump/logic_analyzer/receiver.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/receiver/Behavioral 1374376031 \
+      FL C:/Users/don/repos/sump/logic_analyzer/receiver.vhd EN work/receiver 1374376030
+FL C:/Users/don/repos/sump/logic_analyzer/rle_enc.vhd 2013/07/20.17:11:51 P.68d
+EN work/rle_enc 1374376026 FL C:/Users/don/repos/sump/logic_analyzer/rle_enc.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/rle_enc/Behavioral 1374376027 \
+      FL C:/Users/don/repos/sump/logic_analyzer/rle_enc.vhd EN work/rle_enc 1374376026
+FL C:/Users/don/repos/sump/logic_analyzer/sampler.vhd 2013/07/20.17:11:51 P.68d
+EN work/sampler 1374376020 FL C:/Users/don/repos/sump/logic_analyzer/sampler.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/sampler/Behavioral 1374376021 \
+      FL C:/Users/don/repos/sump/logic_analyzer/sampler.vhd EN work/sampler 1374376020
+FL C:/Users/don/repos/sump/logic_analyzer/sram_bram.vhd 2013/07/20.17:11:51 P.68d
+EN work/sram_bram 1374376042 \
+      FL C:/Users/don/repos/sump/logic_analyzer/sram_bram.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/sram_bram/Behavioral 1374376043 \
+      FL C:/Users/don/repos/sump/logic_analyzer/sram_bram.vhd EN work/sram_bram 1374376042 \
+      CP BRAM8k32bit
+FL C:/Users/don/repos/sump/logic_analyzer/stage.vhd 2013/07/20.17:11:51 P.68d
+EN work/stage 1374376006 FL C:/Users/don/repos/sump/logic_analyzer/stage.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/stage/Behavioral 1374376007 \
+      FL C:/Users/don/repos/sump/logic_analyzer/stage.vhd EN work/stage 1374376006
+FL C:/Users/don/repos/sump/logic_analyzer/sync.vhd 2013/07/20.17:11:51 P.68d
+EN work/sync 1374376018 FL C:/Users/don/repos/sump/logic_analyzer/sync.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/sync/Behavioral 1374376019 \
+      FL C:/Users/don/repos/sump/logic_analyzer/sync.vhd EN work/sync 1374376018 \
+      CP demux CP filter
+FL C:/Users/don/repos/sump/logic_analyzer/transmitter.vhd 2013/07/20.17:11:51 P.68d
+EN work/transmitter 1374376032 \
+      FL C:/Users/don/repos/sump/logic_analyzer/transmitter.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/transmitter/Behavioral 1374376033 \
+      FL C:/Users/don/repos/sump/logic_analyzer/transmitter.vhd \
+      EN work/transmitter 1374376032
+FL C:/Users/don/repos/sump/logic_analyzer/trigger.vhd 2013/07/20.17:11:51 P.68d
+EN work/trigger 1374376022 FL C:/Users/don/repos/sump/logic_analyzer/trigger.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/trigger/Behavioral 1374376023 \
+      FL C:/Users/don/repos/sump/logic_analyzer/trigger.vhd EN work/trigger 1374376022 \
+      CP stage

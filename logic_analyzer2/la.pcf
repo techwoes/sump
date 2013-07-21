@@ -1,0 +1,1481 @@
+//! **************************************************************************
+// Written by: Map P.68d on Sat Jul 20 22:07:28 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rx" LOCATE = SITE "R7" LEVEL 1;
+COMP "tx" LOCATE = SITE "M14" LEVEL 1;
+COMP "exClock" LOCATE = SITE "B8" LEVEL 1;
+COMP "resetSwitch" LOCATE = SITE "K17" LEVEL 1;
+COMP "input<10>" LOCATE = SITE "F8" LEVEL 1;
+COMP "input<11>" LOCATE = SITE "E8" LEVEL 1;
+COMP "input<12>" LOCATE = SITE "A13" LEVEL 1;
+COMP "input<20>" LOCATE = SITE "E13" LEVEL 1;
+COMP "input<13>" LOCATE = SITE "B13" LEVEL 1;
+COMP "input<21>" LOCATE = SITE "C4" LEVEL 1;
+COMP "input<14>" LOCATE = SITE "A14" LEVEL 1;
+COMP "input<22>" LOCATE = SITE "B11" LEVEL 1;
+COMP "input<30>" LOCATE = SITE "C3" LEVEL 1;
+COMP "input<15>" LOCATE = SITE "B14" LEVEL 1;
+COMP "input<23>" LOCATE = SITE "A11" LEVEL 1;
+COMP "input<31>" LOCATE = SITE "C15" LEVEL 1;
+COMP "input<16>" LOCATE = SITE "C14" LEVEL 1;
+COMP "input<24>" LOCATE = SITE "A8" LEVEL 1;
+COMP "input<17>" LOCATE = SITE "D14" LEVEL 1;
+COMP "input<25>" LOCATE = SITE "G9" LEVEL 1;
+COMP "input<18>" LOCATE = SITE "A16" LEVEL 1;
+COMP "input<26>" LOCATE = SITE "D12" LEVEL 1;
+COMP "input<19>" LOCATE = SITE "B16" LEVEL 1;
+COMP "input<27>" LOCATE = SITE "C12" LEVEL 1;
+COMP "input<28>" LOCATE = SITE "A15" LEVEL 1;
+COMP "input<29>" LOCATE = SITE "B15" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "F11" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "C11" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "D11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "E9" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "F9" LEVEL 1;
+COMP "input<0>" LOCATE = SITE "B4" LEVEL 1;
+COMP "input<1>" LOCATE = SITE "A4" LEVEL 1;
+COMP "input<2>" LOCATE = SITE "D5" LEVEL 1;
+COMP "input<3>" LOCATE = SITE "C5" LEVEL 1;
+COMP "input<4>" LOCATE = SITE "A6" LEVEL 1;
+COMP "input<5>" LOCATE = SITE "B6" LEVEL 1;
+COMP "input<6>" LOCATE = SITE "E7" LEVEL 1;
+COMP "input<7>" LOCATE = SITE "F7" LEVEL 1;
+COMP "input<8>" LOCATE = SITE "D7" LEVEL 1;
+COMP "input<9>" LOCATE = SITE "C7" LEVEL 1;
+COMP "xtalClock" LOCATE = SITE "C9" LEVEL 1;
+COMP "switch<0>" LOCATE = SITE "L13" LEVEL 1;
+COMP "switch<1>" LOCATE = SITE "L14" LEVEL 1;
+NET "led_7_OBUF" BEL "Inst_core/BUFGMUX_intex.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clock1 = BEL "inst_debounce/result" BEL "inst_debounce/flipflops_1"
+        BEL "inst_debounce/flipflops_0" BEL "inst_debounce/counter_out_0" BEL
+        "inst_debounce/counter_out_1" BEL "inst_debounce/counter_out_2" BEL
+        "inst_debounce/counter_out_3" BEL "inst_debounce/counter_out_4" BEL
+        "inst_debounce/counter_out_5" BEL "inst_debounce/counter_out_6" BEL
+        "inst_debounce/counter_out_7" BEL "inst_debounce/counter_out_8" BEL
+        "inst_debounce/counter_out_9" BEL "inst_debounce/counter_out_10" BEL
+        "inst_debounce/counter_out_11" BEL "inst_debounce/counter_out_12" BEL
+        "inst_debounce/counter_out_13" BEL "inst_debounce/counter_out_14" BEL
+        "inst_debounce/counter_out_15" BEL "inst_debounce/counter_out_16" BEL
+        "inst_debounce/counter_out_17" BEL "inst_debounce/counter_out_18" BEL
+        "inst_debounce/counter_out_19" BEL "test_counter_0" BEL
+        "test_counter_1" BEL "test_counter_2" BEL "test_counter_3" BEL
+        "test_counter_4" BEL "test_counter_5" BEL "test_counter_6" BEL
+        "test_counter_7" BEL "test_counter_8" BEL "test_counter_9" BEL
+        "test_counter_10" BEL "test_counter_11" BEL "test_counter_12" BEL
+        "test_counter_13" BEL "test_counter_14" BEL "test_counter_15" BEL
+        "test_counter_16" BEL "test_counter_17" BEL "test_counter_18" BEL
+        "test_counter_19" BEL "test_counter_20" BEL "test_counter_21" BEL
+        "test_counter_22" BEL "test_counter_23" BEL "test_counter_24" BEL
+        "test_counter_25" BEL "test_counter_26" BEL "test_counter_27" BEL
+        "test_counter_28" BEL "test_counter_29" BEL "test_counter_30" BEL
+        "test_counter_31" BEL "test_counter_32" BEL "test_counter_33" BEL
+        "test_counter_34" BEL "test_counter_35" BEL "test_counter_36" BEL
+        "test_counter_37" BEL "test_counter_38" BEL "test_counter_39" BEL
+        "test_counter_40" BEL "Inst_sram/address_0" BEL "Inst_sram/address_1"
+        BEL "Inst_sram/address_2" BEL "Inst_sram/address_3" BEL
+        "Inst_sram/address_4" BEL "Inst_sram/address_5" BEL
+        "Inst_sram/address_6" BEL "Inst_sram/address_7" BEL
+        "Inst_sram/address_8" BEL "Inst_sram/address_9" BEL
+        "Inst_sram/address_10" BEL "Inst_sram/address_11" BEL
+        "Inst_sram/address_12" BEL "Inst_eia232/Inst_transmitter/txBuffer_0"
+        BEL "Inst_eia232/Inst_transmitter/txBuffer_1" BEL
+        "Inst_eia232/Inst_transmitter/txBuffer_2" BEL
+        "Inst_eia232/Inst_transmitter/txBuffer_3" BEL
+        "Inst_eia232/Inst_transmitter/txBuffer_4" BEL
+        "Inst_eia232/Inst_transmitter/txBuffer_5" BEL
+        "Inst_eia232/Inst_transmitter/txBuffer_6" BEL
+        "Inst_eia232/Inst_transmitter/txBuffer_7" BEL
+        "Inst_eia232/Inst_transmitter/txBuffer_8" BEL
+        "Inst_eia232/Inst_transmitter/busy" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_0" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_1" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_2" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_3" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_4" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_5" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_6" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_7" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_8" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_9" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_10" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_11" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_12" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_13" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_14" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_15" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_16" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_17" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_18" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_19" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_20" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_21" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_22" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_23" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_24" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_25" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_26" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_27" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_28" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_29" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_30" BEL
+        "Inst_eia232/Inst_transmitter/dataBuffer_31" BEL
+        "Inst_eia232/Inst_transmitter/paused" BEL
+        "Inst_eia232/Inst_transmitter/byte_0" BEL
+        "Inst_eia232/Inst_transmitter/byte_1" BEL
+        "Inst_eia232/Inst_transmitter/byte_2" BEL
+        "Inst_eia232/Inst_transmitter/byte_3" BEL
+        "Inst_eia232/Inst_transmitter/byte_4" BEL
+        "Inst_eia232/Inst_transmitter/byte_5" BEL
+        "Inst_eia232/Inst_transmitter/byte_6" BEL
+        "Inst_eia232/Inst_transmitter/byte_7" BEL
+        "Inst_eia232/Inst_transmitter/disabled" BEL
+        "Inst_eia232/Inst_transmitter/byteDone" BEL
+        "Inst_eia232/Inst_transmitter/writeByte" BEL
+        "Inst_eia232/Inst_transmitter/bytes_0" BEL
+        "Inst_eia232/Inst_transmitter/bytes_1" BEL
+        "Inst_eia232/Inst_transmitter/bytes_2" BEL
+        "Inst_eia232/Inst_transmitter/disabledBuffer_0" BEL
+        "Inst_eia232/Inst_transmitter/disabledBuffer_1" BEL
+        "Inst_eia232/Inst_transmitter/disabledBuffer_2" BEL
+        "Inst_eia232/Inst_transmitter/disabledBuffer_3" BEL
+        "Inst_eia232/Inst_transmitter/bits_0" BEL
+        "Inst_eia232/Inst_transmitter/bits_1" BEL
+        "Inst_eia232/Inst_transmitter/bits_2" BEL
+        "Inst_eia232/Inst_transmitter/bits_3" BEL
+        "Inst_eia232/Inst_transmitter/counter_0" BEL
+        "Inst_eia232/Inst_transmitter/counter_1" BEL
+        "Inst_eia232/Inst_transmitter/counter_2" BEL
+        "Inst_eia232/Inst_transmitter/counter_3" BEL
+        "Inst_eia232/Inst_transmitter/counter_4" BEL
+        "Inst_eia232/Inst_transmitter/state_FSM_FFd1" BEL
+        "Inst_eia232/Inst_transmitter/state_FSM_FFd2" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_0" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_1" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_2" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_3" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_4" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_5" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_6" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_7" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_8" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_9" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_10" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_11" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_12" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_13" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_14" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_15" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_16" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_17" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_18" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_19" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_20" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_21" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_22" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_23" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_24" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_25" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_26" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_27" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_28" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_29" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_30" BEL
+        "Inst_eia232/Inst_receiver/dataBuf_31" BEL
+        "Inst_eia232/Inst_receiver/bytecount_0" BEL
+        "Inst_eia232/Inst_receiver/bytecount_1" BEL
+        "Inst_eia232/Inst_receiver/bytecount_2" BEL
+        "Inst_eia232/Inst_receiver/counter_0" BEL
+        "Inst_eia232/Inst_receiver/counter_1" BEL
+        "Inst_eia232/Inst_receiver/counter_2" BEL
+        "Inst_eia232/Inst_receiver/counter_3" BEL
+        "Inst_eia232/Inst_receiver/counter_4" BEL
+        "Inst_eia232/Inst_receiver/opcode_0" BEL
+        "Inst_eia232/Inst_receiver/opcode_1" BEL
+        "Inst_eia232/Inst_receiver/opcode_2" BEL
+        "Inst_eia232/Inst_receiver/opcode_3" BEL
+        "Inst_eia232/Inst_receiver/opcode_4" BEL
+        "Inst_eia232/Inst_receiver/opcode_5" BEL
+        "Inst_eia232/Inst_receiver/opcode_6" BEL
+        "Inst_eia232/Inst_receiver/opcode_7" BEL
+        "Inst_eia232/Inst_receiver/bitcount_0" BEL
+        "Inst_eia232/Inst_receiver/bitcount_1" BEL
+        "Inst_eia232/Inst_receiver/bitcount_2" BEL
+        "Inst_eia232/Inst_receiver/bitcount_3" BEL
+        "Inst_eia232/Inst_receiver/state_FSM_FFd1" BEL
+        "Inst_eia232/Inst_receiver/state_FSM_FFd2" BEL
+        "Inst_eia232/Inst_receiver/state_FSM_FFd4" BEL
+        "Inst_eia232/Inst_receiver/state_FSM_FFd7" BEL
+        "Inst_eia232/Inst_receiver/state_FSM_FFd5" BEL
+        "Inst_eia232/Inst_receiver/state_FSM_FFd6" BEL
+        "Inst_eia232/Inst_prescaler/scaled" BEL
+        "Inst_eia232/Inst_prescaler/counter_0" BEL
+        "Inst_eia232/Inst_prescaler/counter_1" BEL
+        "Inst_eia232/Inst_prescaler/counter_2" BEL
+        "Inst_eia232/Inst_prescaler/counter_3" BEL
+        "Inst_eia232/Inst_prescaler/counter_4" BEL
+        "Inst_eia232/Inst_prescaler/counter_5" BEL
+        "Inst_eia232/Inst_prescaler/counter_6" BEL
+        "Inst_eia232/Inst_prescaler/counter_7" BEL "Inst_eia232/executePrev"
+        BEL "Inst_eia232/disabledGroupsReg_3" BEL
+        "Inst_eia232/disabledGroupsReg_2" BEL
+        "Inst_eia232/disabledGroupsReg_1" BEL
+        "Inst_eia232/disabledGroupsReg_0" BEL "Inst_eia232/xon" BEL
+        "Inst_eia232/wrFlags" BEL "Inst_eia232/xoff" BEL "Inst_eia232/id" BEL
+        "Inst_core/Inst_sync/output_0" BEL "Inst_core/Inst_sync/output_1" BEL
+        "Inst_core/Inst_sync/output_2" BEL "Inst_core/Inst_sync/output_3" BEL
+        "Inst_core/Inst_sync/output_4" BEL "Inst_core/Inst_sync/output_5" BEL
+        "Inst_core/Inst_sync/output_6" BEL "Inst_core/Inst_sync/output_7" BEL
+        "Inst_core/Inst_sync/output_8" BEL "Inst_core/Inst_sync/output_9" BEL
+        "Inst_core/Inst_sync/output_10" BEL "Inst_core/Inst_sync/output_11"
+        BEL "Inst_core/Inst_sync/output_12" BEL
+        "Inst_core/Inst_sync/output_13" BEL "Inst_core/Inst_sync/output_14"
+        BEL "Inst_core/Inst_sync/output_15" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_0" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_1" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_2" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_3" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_4" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_5" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_6" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_7" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_8" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_9" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_10" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_11" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_12" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_13" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_14" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_15" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_16" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_17" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_18" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_19" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_20" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_21" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_22" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_23" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_24" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_25" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_26" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_27" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_28" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_29" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_30" BEL
+        "Inst_core/Inst_sync/synchronizedInput180_31" BEL
+        "Inst_core/Inst_sync/synchronizedInput_0" BEL
+        "Inst_core/Inst_sync/synchronizedInput_1" BEL
+        "Inst_core/Inst_sync/synchronizedInput_2" BEL
+        "Inst_core/Inst_sync/synchronizedInput_3" BEL
+        "Inst_core/Inst_sync/synchronizedInput_4" BEL
+        "Inst_core/Inst_sync/synchronizedInput_5" BEL
+        "Inst_core/Inst_sync/synchronizedInput_6" BEL
+        "Inst_core/Inst_sync/synchronizedInput_7" BEL
+        "Inst_core/Inst_sync/synchronizedInput_8" BEL
+        "Inst_core/Inst_sync/synchronizedInput_9" BEL
+        "Inst_core/Inst_sync/synchronizedInput_10" BEL
+        "Inst_core/Inst_sync/synchronizedInput_11" BEL
+        "Inst_core/Inst_sync/synchronizedInput_12" BEL
+        "Inst_core/Inst_sync/synchronizedInput_13" BEL
+        "Inst_core/Inst_sync/synchronizedInput_14" BEL
+        "Inst_core/Inst_sync/synchronizedInput_15" BEL
+        "Inst_core/Inst_sync/synchronizedInput_16" BEL
+        "Inst_core/Inst_sync/synchronizedInput_17" BEL
+        "Inst_core/Inst_sync/synchronizedInput_18" BEL
+        "Inst_core/Inst_sync/synchronizedInput_19" BEL
+        "Inst_core/Inst_sync/synchronizedInput_20" BEL
+        "Inst_core/Inst_sync/synchronizedInput_21" BEL
+        "Inst_core/Inst_sync/synchronizedInput_22" BEL
+        "Inst_core/Inst_sync/synchronizedInput_23" BEL
+        "Inst_core/Inst_sync/synchronizedInput_24" BEL
+        "Inst_core/Inst_sync/synchronizedInput_25" BEL
+        "Inst_core/Inst_sync/synchronizedInput_26" BEL
+        "Inst_core/Inst_sync/synchronizedInput_27" BEL
+        "Inst_core/Inst_sync/synchronizedInput_28" BEL
+        "Inst_core/Inst_sync/synchronizedInput_29" BEL
+        "Inst_core/Inst_sync/synchronizedInput_30" BEL
+        "Inst_core/Inst_sync/synchronizedInput_31" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_22" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_17" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_21" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_16" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_20" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_29" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_28" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_27" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_26" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_31" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_25" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_30" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_19" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_24" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_18" BEL
+        "Inst_core/Inst_sync/Inst_demux/output_23" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_7" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_6" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_5" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_4" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_3" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_2" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_1" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_0" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_29" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_28" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_27" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_26" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_31" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_30" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_19" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_24" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_25" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_18" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_23" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_17" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_22" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_16" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_21" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_15" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_20" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_14" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_13" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_12" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_11" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_10" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_8" BEL
+        "Inst_core/Inst_sync/Inst_filter/result_9" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_31" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_30" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_29" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_28" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_27" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_26" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_25" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_24" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_23" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_22" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_21" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_20" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_19" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_18" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_17" BEL
+        "Inst_core/Inst_sync/Inst_filter/input180Delay_16" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_31" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_30" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_29" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_28" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_27" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_26" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_25" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_24" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_23" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_22" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_21" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_20" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_19" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_18" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_17" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_16" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_15" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_14" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_13" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_12" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_11" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_10" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_9" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_8" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_7" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_6" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_5" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_4" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_3" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_2" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_1" BEL
+        "Inst_core/Inst_sync/Inst_filter/input360_0" BEL
+        "Inst_core/Inst_controller/bwd_0" BEL
+        "Inst_core/Inst_controller/bwd_1" BEL
+        "Inst_core/Inst_controller/bwd_2" BEL
+        "Inst_core/Inst_controller/bwd_3" BEL
+        "Inst_core/Inst_controller/bwd_4" BEL
+        "Inst_core/Inst_controller/bwd_5" BEL
+        "Inst_core/Inst_controller/bwd_6" BEL
+        "Inst_core/Inst_controller/bwd_7" BEL
+        "Inst_core/Inst_controller/bwd_8" BEL
+        "Inst_core/Inst_controller/bwd_9" BEL
+        "Inst_core/Inst_controller/bwd_10" BEL
+        "Inst_core/Inst_controller/bwd_11" BEL
+        "Inst_core/Inst_controller/bwd_12" BEL
+        "Inst_core/Inst_controller/bwd_13" BEL
+        "Inst_core/Inst_controller/bwd_14" BEL
+        "Inst_core/Inst_controller/bwd_15" BEL
+        "Inst_core/Inst_controller/counter_0" BEL
+        "Inst_core/Inst_controller/counter_1" BEL
+        "Inst_core/Inst_controller/counter_2" BEL
+        "Inst_core/Inst_controller/counter_3" BEL
+        "Inst_core/Inst_controller/counter_4" BEL
+        "Inst_core/Inst_controller/counter_5" BEL
+        "Inst_core/Inst_controller/counter_6" BEL
+        "Inst_core/Inst_controller/counter_7" BEL
+        "Inst_core/Inst_controller/counter_8" BEL
+        "Inst_core/Inst_controller/counter_9" BEL
+        "Inst_core/Inst_controller/counter_10" BEL
+        "Inst_core/Inst_controller/counter_11" BEL
+        "Inst_core/Inst_controller/counter_12" BEL
+        "Inst_core/Inst_controller/counter_13" BEL
+        "Inst_core/Inst_controller/counter_14" BEL
+        "Inst_core/Inst_controller/counter_15" BEL
+        "Inst_core/Inst_controller/counter_16" BEL
+        "Inst_core/Inst_controller/counter_17" BEL
+        "Inst_core/Inst_controller/fwd_0" BEL
+        "Inst_core/Inst_controller/fwd_1" BEL
+        "Inst_core/Inst_controller/fwd_2" BEL
+        "Inst_core/Inst_controller/fwd_3" BEL
+        "Inst_core/Inst_controller/fwd_4" BEL
+        "Inst_core/Inst_controller/fwd_5" BEL
+        "Inst_core/Inst_controller/fwd_6" BEL
+        "Inst_core/Inst_controller/fwd_7" BEL
+        "Inst_core/Inst_controller/fwd_8" BEL
+        "Inst_core/Inst_controller/fwd_9" BEL
+        "Inst_core/Inst_controller/fwd_10" BEL
+        "Inst_core/Inst_controller/fwd_11" BEL
+        "Inst_core/Inst_controller/fwd_12" BEL
+        "Inst_core/Inst_controller/fwd_13" BEL
+        "Inst_core/Inst_controller/fwd_14" BEL
+        "Inst_core/Inst_controller/fwd_15" BEL
+        "Inst_core/Inst_controller/state_3" BEL
+        "Inst_core/Inst_controller/state_2" BEL
+        "Inst_core/Inst_controller/state_1" BEL
+        "Inst_core/Inst_controller/state_0" BEL "Inst_core/Inst_rle_enc/old_0"
+        BEL "Inst_core/Inst_rle_enc/old_1" BEL "Inst_core/Inst_rle_enc/old_2"
+        BEL "Inst_core/Inst_rle_enc/old_3" BEL "Inst_core/Inst_rle_enc/old_4"
+        BEL "Inst_core/Inst_rle_enc/old_5" BEL "Inst_core/Inst_rle_enc/old_6"
+        BEL "Inst_core/Inst_rle_enc/old_7" BEL "Inst_core/Inst_rle_enc/old_8"
+        BEL "Inst_core/Inst_rle_enc/old_9" BEL "Inst_core/Inst_rle_enc/old_10"
+        BEL "Inst_core/Inst_rle_enc/old_11" BEL
+        "Inst_core/Inst_rle_enc/old_12" BEL "Inst_core/Inst_rle_enc/old_13"
+        BEL "Inst_core/Inst_rle_enc/old_14" BEL
+        "Inst_core/Inst_rle_enc/old_15" BEL "Inst_core/Inst_rle_enc/old_16"
+        BEL "Inst_core/Inst_rle_enc/old_17" BEL
+        "Inst_core/Inst_rle_enc/old_18" BEL "Inst_core/Inst_rle_enc/old_19"
+        BEL "Inst_core/Inst_rle_enc/old_20" BEL
+        "Inst_core/Inst_rle_enc/old_21" BEL "Inst_core/Inst_rle_enc/old_22"
+        BEL "Inst_core/Inst_rle_enc/old_23" BEL
+        "Inst_core/Inst_rle_enc/old_24" BEL "Inst_core/Inst_rle_enc/old_25"
+        BEL "Inst_core/Inst_rle_enc/old_26" BEL
+        "Inst_core/Inst_rle_enc/old_27" BEL "Inst_core/Inst_rle_enc/old_28"
+        BEL "Inst_core/Inst_rle_enc/old_29" BEL
+        "Inst_core/Inst_rle_enc/old_30" BEL "Inst_core/Inst_rle_enc/valid" BEL
+        "Inst_core/Inst_rle_enc/ctr_0" BEL "Inst_core/Inst_rle_enc/ctr_1" BEL
+        "Inst_core/Inst_rle_enc/ctr_2" BEL "Inst_core/Inst_rle_enc/ctr_3" BEL
+        "Inst_core/Inst_rle_enc/ctr_4" BEL "Inst_core/Inst_rle_enc/ctr_5" BEL
+        "Inst_core/Inst_rle_enc/ctr_6" BEL "Inst_core/Inst_rle_enc/ctr_7" BEL
+        "Inst_core/Inst_rle_enc/ctr_8" BEL "Inst_core/Inst_rle_enc/ctr_9" BEL
+        "Inst_core/Inst_rle_enc/ctr_10" BEL "Inst_core/Inst_rle_enc/ctr_11"
+        BEL "Inst_core/Inst_rle_enc/ctr_12" BEL
+        "Inst_core/Inst_rle_enc/ctr_13" BEL "Inst_core/Inst_rle_enc/ctr_14"
+        BEL "Inst_core/Inst_rle_enc/ctr_15" BEL
+        "Inst_core/Inst_rle_enc/ctr_16" BEL "Inst_core/Inst_rle_enc/ctr_17"
+        BEL "Inst_core/Inst_rle_enc/ctr_18" BEL
+        "Inst_core/Inst_rle_enc/ctr_19" BEL "Inst_core/Inst_rle_enc/ctr_20"
+        BEL "Inst_core/Inst_rle_enc/ctr_21" BEL
+        "Inst_core/Inst_rle_enc/ctr_22" BEL "Inst_core/Inst_rle_enc/ctr_23"
+        BEL "Inst_core/Inst_rle_enc/ctr_24" BEL
+        "Inst_core/Inst_rle_enc/ctr_25" BEL "Inst_core/Inst_rle_enc/ctr_26"
+        BEL "Inst_core/Inst_rle_enc/ctr_27" BEL
+        "Inst_core/Inst_rle_enc/ctr_28" BEL "Inst_core/Inst_rle_enc/ctr_29"
+        BEL "Inst_core/Inst_rle_enc/ctr_30" BEL
+        "Inst_core/Inst_rle_enc/valout" BEL "Inst_core/Inst_rle_enc/dout_0"
+        BEL "Inst_core/Inst_rle_enc/dout_1" BEL
+        "Inst_core/Inst_rle_enc/dout_2" BEL "Inst_core/Inst_rle_enc/dout_3"
+        BEL "Inst_core/Inst_rle_enc/dout_4" BEL
+        "Inst_core/Inst_rle_enc/dout_5" BEL "Inst_core/Inst_rle_enc/dout_6"
+        BEL "Inst_core/Inst_rle_enc/dout_7" BEL
+        "Inst_core/Inst_rle_enc/dout_8" BEL "Inst_core/Inst_rle_enc/dout_9"
+        BEL "Inst_core/Inst_rle_enc/dout_10" BEL
+        "Inst_core/Inst_rle_enc/dout_11" BEL "Inst_core/Inst_rle_enc/dout_12"
+        BEL "Inst_core/Inst_rle_enc/dout_13" BEL
+        "Inst_core/Inst_rle_enc/dout_14" BEL "Inst_core/Inst_rle_enc/dout_15"
+        BEL "Inst_core/Inst_rle_enc/dout_16" BEL
+        "Inst_core/Inst_rle_enc/dout_17" BEL "Inst_core/Inst_rle_enc/dout_18"
+        BEL "Inst_core/Inst_rle_enc/dout_19" BEL
+        "Inst_core/Inst_rle_enc/dout_20" BEL "Inst_core/Inst_rle_enc/dout_21"
+        BEL "Inst_core/Inst_rle_enc/dout_22" BEL
+        "Inst_core/Inst_rle_enc/dout_23" BEL "Inst_core/Inst_rle_enc/dout_24"
+        BEL "Inst_core/Inst_rle_enc/dout_25" BEL
+        "Inst_core/Inst_rle_enc/dout_26" BEL "Inst_core/Inst_rle_enc/dout_27"
+        BEL "Inst_core/Inst_rle_enc/dout_28" BEL
+        "Inst_core/Inst_rle_enc/dout_29" BEL "Inst_core/Inst_rle_enc/dout_30"
+        BEL "Inst_core/Inst_rle_enc/dout_31" BEL
+        "Inst_core/Inst_sampler/divider_0" BEL
+        "Inst_core/Inst_sampler/divider_1" BEL
+        "Inst_core/Inst_sampler/divider_2" BEL
+        "Inst_core/Inst_sampler/divider_3" BEL
+        "Inst_core/Inst_sampler/divider_4" BEL
+        "Inst_core/Inst_sampler/divider_5" BEL
+        "Inst_core/Inst_sampler/divider_6" BEL
+        "Inst_core/Inst_sampler/divider_7" BEL
+        "Inst_core/Inst_sampler/divider_8" BEL
+        "Inst_core/Inst_sampler/divider_9" BEL
+        "Inst_core/Inst_sampler/divider_10" BEL
+        "Inst_core/Inst_sampler/divider_11" BEL
+        "Inst_core/Inst_sampler/divider_12" BEL
+        "Inst_core/Inst_sampler/divider_13" BEL
+        "Inst_core/Inst_sampler/divider_14" BEL
+        "Inst_core/Inst_sampler/divider_15" BEL
+        "Inst_core/Inst_sampler/divider_16" BEL
+        "Inst_core/Inst_sampler/divider_17" BEL
+        "Inst_core/Inst_sampler/divider_18" BEL
+        "Inst_core/Inst_sampler/divider_19" BEL
+        "Inst_core/Inst_sampler/divider_20" BEL
+        "Inst_core/Inst_sampler/divider_21" BEL
+        "Inst_core/Inst_sampler/divider_22" BEL
+        "Inst_core/Inst_sampler/divider_23" BEL "Inst_core/Inst_sampler/ready"
+        BEL "Inst_core/Inst_sampler/sample_0" BEL
+        "Inst_core/Inst_sampler/sample_1" BEL
+        "Inst_core/Inst_sampler/sample_2" BEL
+        "Inst_core/Inst_sampler/sample_3" BEL
+        "Inst_core/Inst_sampler/sample_4" BEL
+        "Inst_core/Inst_sampler/sample_5" BEL
+        "Inst_core/Inst_sampler/sample_6" BEL
+        "Inst_core/Inst_sampler/sample_7" BEL
+        "Inst_core/Inst_sampler/sample_8" BEL
+        "Inst_core/Inst_sampler/sample_9" BEL
+        "Inst_core/Inst_sampler/sample_10" BEL
+        "Inst_core/Inst_sampler/sample_11" BEL
+        "Inst_core/Inst_sampler/sample_12" BEL
+        "Inst_core/Inst_sampler/sample_13" BEL
+        "Inst_core/Inst_sampler/sample_14" BEL
+        "Inst_core/Inst_sampler/sample_15" BEL
+        "Inst_core/Inst_sampler/sample_16" BEL
+        "Inst_core/Inst_sampler/sample_17" BEL
+        "Inst_core/Inst_sampler/sample_18" BEL
+        "Inst_core/Inst_sampler/sample_19" BEL
+        "Inst_core/Inst_sampler/sample_20" BEL
+        "Inst_core/Inst_sampler/sample_21" BEL
+        "Inst_core/Inst_sampler/sample_22" BEL
+        "Inst_core/Inst_sampler/sample_23" BEL
+        "Inst_core/Inst_sampler/sample_24" BEL
+        "Inst_core/Inst_sampler/sample_25" BEL
+        "Inst_core/Inst_sampler/sample_26" BEL
+        "Inst_core/Inst_sampler/sample_27" BEL
+        "Inst_core/Inst_sampler/sample_28" BEL
+        "Inst_core/Inst_sampler/sample_29" BEL
+        "Inst_core/Inst_sampler/sample_30" BEL
+        "Inst_core/Inst_sampler/sample_31" BEL
+        "Inst_core/Inst_sampler/syncExClock" BEL
+        "Inst_core/Inst_sampler/lastExClock" BEL
+        "Inst_core/Inst_sampler/counter_0" BEL
+        "Inst_core/Inst_sampler/counter_1" BEL
+        "Inst_core/Inst_sampler/counter_2" BEL
+        "Inst_core/Inst_sampler/counter_3" BEL
+        "Inst_core/Inst_sampler/counter_4" BEL
+        "Inst_core/Inst_sampler/counter_5" BEL
+        "Inst_core/Inst_sampler/counter_6" BEL
+        "Inst_core/Inst_sampler/counter_7" BEL
+        "Inst_core/Inst_sampler/counter_8" BEL
+        "Inst_core/Inst_sampler/counter_9" BEL
+        "Inst_core/Inst_sampler/counter_10" BEL
+        "Inst_core/Inst_sampler/counter_11" BEL
+        "Inst_core/Inst_sampler/counter_12" BEL
+        "Inst_core/Inst_sampler/counter_13" BEL
+        "Inst_core/Inst_sampler/counter_14" BEL
+        "Inst_core/Inst_sampler/counter_15" BEL
+        "Inst_core/Inst_sampler/counter_16" BEL
+        "Inst_core/Inst_sampler/counter_17" BEL
+        "Inst_core/Inst_sampler/counter_18" BEL
+        "Inst_core/Inst_sampler/counter_19" BEL
+        "Inst_core/Inst_sampler/counter_20" BEL
+        "Inst_core/Inst_sampler/counter_21" BEL
+        "Inst_core/Inst_sampler/counter_22" BEL
+        "Inst_core/Inst_sampler/counter_23" BEL "Inst_core/Inst_decoder/arm"
+        BEL "Inst_core/Inst_decoder/wrspeed" BEL
+        "Inst_core/Inst_decoder/wrtrigval_0" BEL
+        "Inst_core/Inst_decoder/wrtrigval_1" BEL
+        "Inst_core/Inst_decoder/wrtrigval_2" BEL
+        "Inst_core/Inst_decoder/wrtrigval_3" BEL
+        "Inst_core/Inst_decoder/reset" BEL "Inst_core/Inst_decoder/wrsize" BEL
+        "Inst_core/Inst_decoder/wrtrigcfg_0" BEL
+        "Inst_core/Inst_decoder/wrtrigcfg_1" BEL
+        "Inst_core/Inst_decoder/wrtrigcfg_2" BEL
+        "Inst_core/Inst_decoder/wrtrigcfg_3" BEL
+        "Inst_core/Inst_decoder/wrtrigmask_0" BEL
+        "Inst_core/Inst_decoder/wrtrigmask_1" BEL
+        "Inst_core/Inst_decoder/wrtrigmask_2" BEL
+        "Inst_core/Inst_decoder/wrtrigmask_3" BEL
+        "Inst_core/BUFGMUX_intex.GCLKMUX" BEL "Inst_core/BUFGMUX_intex" BEL
+        "Inst_core/Inst_trigger/levelReg_1" BEL
+        "Inst_core/Inst_trigger/levelReg_0" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/state_FSM_FFd2" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/state_FSM_FFd1" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/shiftRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/match" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/maskRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/match32Register" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/configRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_15" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_14" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_13" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_12" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_11" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_10" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_9" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_8" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_7" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_6" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_5" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_4" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_3" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_2" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_1" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/counter_0" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_31"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_30"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_29"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_28"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_27"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_26"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_25"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_24"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_23"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_22"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_21"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_20"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_19"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_18"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_17"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_16"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_15"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_14"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_13"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_12"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_11"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_10"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_9"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_8"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_7"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_6"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_5"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_4"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_3"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_2"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_1"
+        BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/intermediateRegister_0"
+        BEL "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/valueRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[3].Inst_stage/run" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/state_FSM_FFd2" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/state_FSM_FFd1" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/shiftRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/match" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/maskRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/match32Register" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/configRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_15" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_14" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_13" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_12" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_11" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_10" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_9" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_8" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_7" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_6" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_5" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_4" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_3" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_2" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_1" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/counter_0" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_31"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_30"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_29"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_28"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_27"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_26"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_25"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_24"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_23"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_22"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_21"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_20"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_19"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_18"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_17"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_16"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_15"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_14"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_13"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_12"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_11"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_10"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_9"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_8"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_7"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_6"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_5"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_4"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_3"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_2"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_1"
+        BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/intermediateRegister_0"
+        BEL "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/valueRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[2].Inst_stage/run" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/state_FSM_FFd2" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/state_FSM_FFd1" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/shiftRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/match" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/maskRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/match32Register" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/configRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_15" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_14" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_13" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_12" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_11" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_10" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_9" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_8" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_7" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_6" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_5" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_4" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_3" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_2" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_1" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/counter_0" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_31"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_30"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_29"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_28"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_27"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_26"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_25"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_24"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_23"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_22"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_21"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_20"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_19"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_18"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_17"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_16"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_15"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_14"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_13"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_12"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_11"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_10"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_9"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_8"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_7"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_6"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_5"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_4"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_3"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_2"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_1"
+        BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/intermediateRegister_0"
+        BEL "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/valueRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[1].Inst_stage/run" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/state_FSM_FFd2" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/state_FSM_FFd1" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/shiftRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/match" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/maskRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/match32Register" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/configRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_15" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_14" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_13" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_12" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_11" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_10" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_9" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_8" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_7" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_6" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_5" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_4" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_3" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_2" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_1" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/counter_0" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_31"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_30"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_29"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_28"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_27"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_26"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_25"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_24"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_23"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_22"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_21"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_20"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_19"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_18"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_17"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_16"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_15"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_14"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_13"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_12"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_11"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_10"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_9"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_8"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_7"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_6"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_5"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_4"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_3"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_2"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_1"
+        BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/intermediateRegister_0"
+        BEL "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_31" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_30" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_29" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_28" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_27" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_26" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_25" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_24" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_23" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_22" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_21" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_20" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_19" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_18" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_17" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_16" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_15" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_14" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_13" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_12" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_11" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_10" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_9" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_8" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_7" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_6" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_5" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_4" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_3" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_2" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_1" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/valueRegister_0" BEL
+        "Inst_core/Inst_trigger/stages[0].Inst_stage/run" BEL
+        "Inst_core/Inst_flags/inverted" BEL "Inst_core/Inst_flags/demux" BEL
+        "Inst_core/Inst_flags/rle" BEL "Inst_core/Inst_flags/external" BEL
+        "Inst_core/Inst_flags/filter" BEL "Inst_core/Inst_sync/output_16" BEL
+        "Inst_core/Inst_sync/output_17" BEL "Inst_core/Inst_sync/output_18"
+        BEL "Inst_core/Inst_sync/output_19" BEL
+        "Inst_core/Inst_sync/output_20" BEL "Inst_core/Inst_sync/output_21"
+        BEL "Inst_core/Inst_sync/output_22" BEL
+        "Inst_core/Inst_sync/output_23" BEL "Inst_core/Inst_sync/output_24"
+        BEL "Inst_core/Inst_sync/output_25" BEL
+        "Inst_core/Inst_sync/output_26" BEL "Inst_core/Inst_sync/output_27"
+        BEL "Inst_core/Inst_sync/output_28" BEL
+        "Inst_core/Inst_sync/output_29" BEL "Inst_core/Inst_sync/output_30"
+        BEL "Inst_core/Inst_sync/output_31" BEL
+        "Inst_eia232/Inst_receiver/state_FSM_FFd3" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[15].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[14].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[13].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[12].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[11].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[10].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[9].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[8].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[7].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[6].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[5].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[4].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[3].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[2].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[1].RAMB16_S2_inst.A" BEL
+        "Inst_sram/Inst_SampleRAM/BlockRAMS[0].RAMB16_S2_inst.A" BEL
+        "clock_BUFG.GCLKMUX" BEL "clock_BUFG";
+PIN Inst_clockman/DCM_baseClock_pins<3> = BEL "Inst_clockman/DCM_baseClock"
+        PINNAME CLKIN;
+TIMEGRP xtalClock = PIN "Inst_clockman/DCM_baseClock_pins<3>";
+NET "xtalClock_IBUFG" PERIOD = 20 ns HIGH 40%;
+TS_xtalClock = PERIOD TIMEGRP "xtalClock" 20 ns HIGH 50%;
+TS_clock1 = PERIOD TIMEGRP "clock1" TS_xtalClock / 2 HIGH 50%;
+PIN Inst_core/Inst_flags/inverted_pins<3> = BEL
+        "Inst_core/Inst_flags/inverted" PINNAME Q;
+PIN Inst_core/Inst_flags/demux_pins<3> = BEL "Inst_core/Inst_flags/demux"
+        PINNAME Q;
+PIN Inst_core/Inst_flags/external_pins<3> = BEL
+        "Inst_core/Inst_flags/external" PINNAME Q;
+PIN Inst_core/Inst_flags/filter_pins<3> = BEL "Inst_core/Inst_flags/filter"
+        PINNAME Q;
+PIN "Inst_core/Inst_flags/inverted_pins<3>" TIG;
+PIN "Inst_core/Inst_flags/demux_pins<3>" TIG;
+PIN "Inst_core/Inst_flags/external_pins<3>" TIG;
+PIN "Inst_core/Inst_flags/filter_pins<3>" TIG;
+SCHEMATIC END;
+

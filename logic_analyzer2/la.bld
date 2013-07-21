@@ -1,0 +1,46 @@
+Release 14.6 ngdbuild P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc la-S3ESK.ucf -p xc3s500e-fg320-4 la.ngc
+la.ngd
+
+Reading NGO file "C:/Users/don/repos/sump/logic_analyzer/la.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "la-S3ESK.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'xtalClock', used in period specification
+   'TS_xtalClock', was traced into DCM_SP instance Inst_clockman/DCM_baseClock.
+   The following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLK2X: <TIMESPEC TS_clock1 = PERIOD "clock1" TS_xtalClock / 2 HIGH 50%>
+
+INFO:ConstraintSystem - The Period constraint <NET "xtalClock" PERIOD = 20.0ns
+   HIGH 40%;> [la-S3ESK.ucf(19)], is specified using the Net Period method which
+   is not recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 164528 kilobytes
+
+Writing NGD file "la.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "la.bld"...
